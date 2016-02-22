@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Binder</string>
+    <string name="add">3+2</string>
+    <string name="sub">3-2</string>
+    <string name="area">长为3宽为2的矩形面积</string>
+    <string name="per">长为3宽为2的矩形周长</string>
+    <string name="cus_binder_add">6+2</string>
+    <string name="cus_binder_sub">6-2</string>
+
 </resources>

@@ -11,13 +11,13 @@
     android:orientation="vertical"
     tools:context="com.ljd.binder.MainActivity">
     <Button
-        android:id="@+id/binder_pool_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="binderPool"/>
-    <Button
         android:id="@+id/custom_binder_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="customBinder"/>
+    <Button
+        android:id="@+id/binder_pool_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="binderPool"/>
 </LinearLayout>

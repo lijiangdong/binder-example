@@ -20,7 +20,20 @@
 
         <service
             android:name=".binderpool.BinderPoolService"
-            android:process=":remote"></service>
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.ljd.binder.BINDER_POOL_SERVICE"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".custombinder.CalculateService"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.ljd.binder.CUSTOM_BINDER"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

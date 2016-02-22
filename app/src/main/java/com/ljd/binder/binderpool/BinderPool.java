@@ -15,7 +15,7 @@ import java.util.concurrent.CountDownLatch;
  * Created by ljd-PC on 2016/2/21.
  */
 public class BinderPool {
-    private static final String TAG = "BinderPool";
+
     public static final int BINDER_NONE = -1;
     public static final int BINDER_CALCULATE = 0;
     public static final int BINDER_RECT = 1;
@@ -70,7 +70,7 @@ public class BinderPool {
 
     private synchronized void connectBinderPoolService(){
         mCountDownLatch = new CountDownLatch(1);
-        Intent service = new Intent(mContext,BinderPoolService.class);
+        Intent service = new Intent("com.ljd.binder.BINDER_POOL_SERVICE");
         mContext.bindService(service,mBinderPoolConnection,Context.BIND_AUTO_CREATE);
         try {
             mCountDownLatch.await();
