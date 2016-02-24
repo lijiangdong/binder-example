@@ -8,24 +8,14 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".custombinder.CustomBinderActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".binderpool.BinderPoolActivity" />
-        <activity android:name=".custombinder.CustomBinderActivity" />
 
-        <service
-            android:name=".binderpool.BinderPoolService"
-            android:process=":remote" >
-            <intent-filter>
-                <action android:name="com.ljd.binder.BINDER_POOL_SERVICE"></action>
-                <category android:name="android.intent.category.DEFAULT"></category>
-            </intent-filter>
-        </service>
         <service
             android:name=".custombinder.CalculateService"
             android:process=":remote">
